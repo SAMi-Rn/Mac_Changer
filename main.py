@@ -1,16 +1,10 @@
-# This is a sample Python script.
+import subprocess
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+print("[+] ifconfig en0 before changing MAC address")
+subprocess.call(["ifconfig", "en0", "down"])
+subprocess.call(["sudo", "ifconfig", "en0", "hw", "ether", "00:11:22:33:44:55"])
+subprocess.call(["ifconfig", "en0", "up"])
+print("[+] ifconfig en0 after changing MAC address")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
