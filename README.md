@@ -1,6 +1,6 @@
 # Mac Changer
 
-MacChanger is a Python script for Linux systems that allows users to quickly and easily change the MAC address of a network interface. It provides a command-line interface to specify the network interface and the new MAC address to be set.
+Mac Changer is a Python script for Linux systems that allows users to quickly and easily change the MAC address of a network interface. It provides a command-line interface to specify the network interface and the new MAC address to be set.
 
 ## Features
 
